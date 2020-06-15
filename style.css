@@ -1,0 +1,37 @@
+body{
+    background: #222;
+    color: #f3f3f3;
+    font-family: Helvetica, sans-serif;
+}
+
+.card{
+    background: #121212;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* display 
+.card {
+    display: inline-block;
+}
+*/
+
+/* flexbox (need to have a parent container) 
+.cards { 
+    display: flex;
+}
+
+(then u can individually mess with certain cards)
+
+#c1{
+    flex: 2;
+}
+*/ 
+
+/* grid (ultimate flexiblity) */
+.cards{ 
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
