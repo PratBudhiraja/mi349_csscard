@@ -5,7 +5,7 @@ body{
 }
 
 .card{
-    background: #121212;
+    background: olive;
     border-radius: 10px;
     padding: 20px;
 }
@@ -28,10 +28,44 @@ body{
 }
 */ 
 
-/* grid (ultimate flexiblity) */
+/* grid (ultimate flexiblity) 
 .cards{ 
     display: grid;
     grid-template-columns:1fr 1fr 1fr ;
     grid-template-rows: 100px 100px;
     grid-gap: 10px;
 }
+
+#c1 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+#c2 {
+    grid-column: 1;
+    grid-row: 1/3 ;
+}
+#c3 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+*/
+
+/* positioning 
+
+#c1 {
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 187px;
+}
+*/
+
+/* media queries 
+@media (max-width: 600px) {
+    #c1 {
+        background: magenta;
+    }
+}
+*/ 
